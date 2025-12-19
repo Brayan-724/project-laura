@@ -11,7 +11,6 @@ import net.minecraft.world.level.block.Block
 
 
 fun init() {
-    Constants.LOG.info("Hello Fabric world from Kotlin!")
     CommonObject.init()
 }
 
@@ -20,17 +19,14 @@ class ExampleModBlocks : ModInitializer {
         CommonObject.register(FabricRegistration())
     }
 }
-class FabricRegistration() : Registration {
-    fun location(name: String): ResourceLocation {
-        return ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, name)
-    }
 
+class FabricRegistration() : Registration {
     fun <T> register(
         registry: ResourceKey<Registry<T>>,
         name: String,
         value: (ResourceLocation) -> T
     ): RegistrationHolder<T> {
-        val location = location(name)
+        val location = name.location()
         val holder = RegistrationHolder.create(registry, location)
 
         val registry = BuiltInRegistries.REGISTRY.get(registry.location()) as? Registry<T>

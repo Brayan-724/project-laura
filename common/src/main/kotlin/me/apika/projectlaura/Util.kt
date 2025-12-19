@@ -5,7 +5,7 @@ import net.minecraft.resources.ResourceLocation
 /**
  * @return [ResourceLocation] from the String using the mod id specified in [Constants]
  */
-fun String.location() = ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, this)
+fun String.location(): ResourceLocation = ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, this)
 
 /**
  * @return [ResourceLocation] from the string using the passed namespace
