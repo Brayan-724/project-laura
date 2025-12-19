@@ -31,6 +31,7 @@
       packages = with pkgs;
         [
           kotlin
+          kotlin-language-server
 
           jdk21
           jdt-language-server

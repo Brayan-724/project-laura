@@ -20,8 +20,10 @@ build
 
 # kotlin
 .kotlin
+kls_database.db
 
 # other
 eclipse
 run
 runs
+.factorypath
