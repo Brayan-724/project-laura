@@ -1,27 +1,27 @@
 [versions]
 java = "21"
-kotlin = "2.0.21"
-moddev = "1.0.21"
-loom = "1.8-SNAPSHOT"
+kotlin = "2.2.20"
+moddev = "2.0.126"
+loom = "1.14-SNAPSHOT"
 dokka = "1.9.20"
 
-minecraft = "1.21.1"
-minecraftRange = "[1.21.1, 1.21.2)"
+minecraft = "1.21.10"
+minecraftRange = "[1.21.10,)"
 
 # The version of ParchmentMC that is used, see https://parchmentmc.org/docs/getting-started#choose-a-version for new versions
-parchment = "2024.11.10"
-parchmentMC = "1.21"
+parchment = "2025.10.12"
+parchmentMC = "1.21.10"
 
-neoforge = "21.1.80"
-neoforgeRange = "[21.1, 21.2)"
+neoforge = "21.10.64"
+neoforgeRange = "[21.10,)"
 ## This is the version of minecraft that the 'common' project uses, you can find a list of all versions here
 ## https://projects.neoforged.net/neoforged/neoform
-neoForm = "1.21.1-20240808.144430"
-kff = "5.6.0"
-kffRange = "[5.6, )"
+neoForm = "1.21.10-20251010.172816"
+kff = "6.0.0"
+kffRange = "[6.0,)"
 
-fabricLoader = "0.16.9"
-fabricApi = "0.109.0+1.21.1"
+fabricLoader = "0.18.3"
+fabricApi = "0.138.4+1.21.10"
 flk = "1.12.3+kotlin.2.0.21"
 
 mixin = "0.8.5"

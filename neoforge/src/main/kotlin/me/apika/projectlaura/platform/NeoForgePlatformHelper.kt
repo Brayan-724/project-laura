@@ -14,6 +14,6 @@ class NeoForgePlatformHelper : PlatformHelper {
     }
 
     override fun isDevelopmentEnvironment(): Boolean {
-        return !FMLLoader.isProduction()
+        return !FMLLoader.getCurrent().isProduction
     }
 }

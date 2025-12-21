@@ -16,6 +16,7 @@
       libpulseaudio
       openal
       pipewire
+      flite.lib
 
       xorg.libX11
       xorg.libXcursor
